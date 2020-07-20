@@ -158,7 +158,7 @@ router.post('/qualification', upload.single('image'),function(req, res) {
 	if(req.session && req.session.user){
     res.locals.user = req.session.user;
 	var data={
-		User:req.session.user.username,
+		User:req.session.user.id,
 		Qualification:req.body.Qualification,
 		Institution:req.body.Institution,
 		Duration:req.body.Duration,
