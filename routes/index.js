@@ -39,7 +39,6 @@ router.get('/profile', function(req, res, next) {
   res.render('profile');
 });
 // Get register page
-
 router.get('/home', function(req,res){
 	if(req.session && req.session.user){
       res.locals.user = req.session.user;
@@ -278,7 +277,7 @@ router.post('/done', upload.single('image'), function(req, res) {
     res.locals.user = req.session.user;
 	var data={
 		user:req.session.user.id,
-		user:req.session.user.username,
+		Name:req.session.user.username,
 		Project_Title:req.body.Project_Title,
 		Description:req.body.Description,
 		Grants:req.body.Grants,
