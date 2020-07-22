@@ -17,7 +17,7 @@ $(document).ready(function(){
        })
 	})
   function PrintContent() {
-    //alert('hi')
+    alert('hi')
     var DocumentContainer = document.getElementById('print-box');
     var WindowObject = window.open('', 'PrintWindow', 'width=750,height=650,top=50,left=50,toolbars=no,scrollbars=yes,status=no,resizable=yes');
     var strHtml = "<html>\n<head>\n <link rel=\"stylesheet\" type=\"text/css\"  href=\"stylesheets/index.css\">\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n<table>\n</table>\n</head><body>\n<table></table>\n"
