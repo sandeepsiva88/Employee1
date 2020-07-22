@@ -28,20 +28,6 @@ html(lang='en')
     //print
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.3.3/jQuery.print.min.js')
     script(src='https://allurewebsolutions.com/allure.js')
-    script.
-      function PrintDiv() {
-      //alert('hi')
-      var DocumentContainer = document.getElementById('print-box');
-      var WindowObject = window.open('', 'PrintWindow', 'width=750,height=650,top=50,left=50,toolbars=no,scrollbars=yes,status=no,resizable=yes');
-      var strHtml = "<html>\\n<head>\n <link rel=\"stylesheet\" type=\"text/css\"  href=\"stylesheets/index.css\">\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">\n<table>\n</table>\n</head><body>\n<table></table>\n"
-      + DocumentContainer.innerHTML + "\\n</div>\n</body>\n</html>";
-      WindowObject.document.writeln(strHtml);
-      //WindowObject.document.writeln(DocumentContainer.innerHTML);
-      WindowObject.document.close();
-      WindowObject.focus();
-      WindowObject.print();
-      WindowObject.close();
-      }
   body
     section#container
       // header start
